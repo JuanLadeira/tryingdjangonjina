@@ -1,5 +1,6 @@
 import pytest
 from pytest_factoryboy import register
+from tests.factories.api.laboratorio_factory import LaboratorioFactory
 import httpx
 
 @pytest.fixture
@@ -17,3 +18,5 @@ def authenticated_client():
     client.headers['Authorization'] = f'Token {token}'
 
     return client
+
+register(LaboratorioFactory)

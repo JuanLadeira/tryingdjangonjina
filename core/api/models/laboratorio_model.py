@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Laboratorio(models.Model):
-    nome = models.CharField(max_length=100, null=True, blank=True)
+    nome = models.CharField(max_length=100, null=True, blank=True, default="Laboratório")
     endereco = models.CharField(max_length=100, null=True, blank=True)
     status = models.BooleanField(default=True)
     numero_da_acreditacao = models.IntegerField(null=True, blank=True)
