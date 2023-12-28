@@ -1,1 +1,0 @@
-from .laboratorio_model import Laboratorio
